@@ -6,7 +6,7 @@ import {
 
 const initialState = [];
 
-export function EmailBoxReducer(state=initialState, action){
+export function OrganizerEmailBoxReducer(state=initialState, action){
   switch(action.type){
     case FETCH_ORGANIZER_MESSAGES: 
       return [...state, ...action.payload];
