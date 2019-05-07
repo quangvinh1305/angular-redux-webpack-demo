@@ -1,0 +1,12 @@
+<div class="organizerEmailBox">
+  <h4>EmailBox component:</h4>
+
+  <div>Path: {{$ctrl.path}} </div>
+  <div>AccountId: {{$ctrl.accountid}} </div>
+
+  <ul>
+    <li ng-repeat="message in $ctrl.messages">{{message.title.rendered}}
+		<button ng-click="$ctrl.trashMessage($index)">trash </button>
+    </li>
+  </ul>
+</div>
