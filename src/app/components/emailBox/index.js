@@ -6,7 +6,7 @@ import template from './emailBox.html'
 const options = {
   bindings: {
     accountid: '<',
-    path: '<'
+    path: '@'
   },
   controller: EmailBoxController,
   template

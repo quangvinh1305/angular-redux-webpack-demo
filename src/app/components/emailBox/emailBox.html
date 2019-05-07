@@ -1,10 +1,12 @@
 <div class="emailBox">
   <h4>EmailBox component:</h4>
 
-    Path: {{$ctrl.path}} <br/>
-  AccountId: {{$ctrl.accountid}} <br/>
+  <div>Path: {{$ctrl.path}} </div>
+  <div>AccountId: {{$ctrl.accountid}} </div>
 
   <ul>
-    <li ng-repeat="message in $ctrl.messages">{{message.title.rendered}}</li>
+    <li ng-repeat="message in $ctrl.messages">{{message.title.rendered}}
+		<button>trash </button>
+    </li>
   </ul>
 </div>
